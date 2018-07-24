@@ -42,4 +42,10 @@ public class FactionSaver extends BukkitRunnable {
         }
 
     }
+
+    public Faction getFaction() {
+        return faction;
+    }
 }
+
+

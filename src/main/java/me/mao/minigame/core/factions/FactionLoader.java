@@ -55,7 +55,7 @@ public class FactionLoader extends BukkitRunnable {
                 return;
             }
 
-            preparedStatement = connection.prepareStatement(SELECT);
+            preparedStatement = connection.prepareStatement(SELECT2);
             preparedStatement.setString(1, faction.getName());
             results = preparedStatement.executeQuery();
 
@@ -95,5 +95,9 @@ public class FactionLoader extends BukkitRunnable {
             e.printStackTrace();
         }
 
+    }
+
+    public Faction getFaction() {
+        return faction;
     }
 }

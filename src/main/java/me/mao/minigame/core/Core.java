@@ -67,7 +67,6 @@ public class Core extends JavaPlugin {
         return instance;
     }
 
-
     public Initializer getInitializer() {
         return initializer;
     }
